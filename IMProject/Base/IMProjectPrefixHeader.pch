@@ -9,7 +9,7 @@
 #ifndef IMProjectPrefixHeader_pch
 #define IMProjectPrefixHeader_pch
 
-//#import <RongIMKit/RongIMKit.h>
+
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "Masonry.h"
@@ -19,6 +19,10 @@
 #import "MJRefresh.h"
 #import <RongIMKit/RongIMKit.h>
 #import <RongIMLib/RongIMLib.h>
+
+#import "ColorDefine.h"
+#import "NetWorkingDefine.h"
+#import "CommonDataDefine.h"
 
 
 #endif /* IMProjectPrefixHeader_pch */

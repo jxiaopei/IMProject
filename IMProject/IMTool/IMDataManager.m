@@ -7,13 +7,25 @@
 //
 
 #import "IMDataManager.h"
-
+#import "IMDefineDataHeader.h"
 
 @implementation IMDataManager
 
 +(void)settingIMData{
 
+    //非debug模式初始化sdk
+    [[RCIM sharedRCIM] initWithAppKey:RONGCLOUD_IM_APPKEY];
+    
+    [RCIM sharedRCIM].globalConversationPortraitSize = CGSizeMake(46, 46);
+    //        [RCIM sharedRCIM].portraitImageViewCornerRadius = 10;
+    //开启用户信息和群组信息的持久化
+    [RCIM sharedRCIM].enablePersistentUserInfoCache = YES;
+    
+    
+    [self loginWithIM];
 }
+
+
 
 +(void)loginWithIM{
     [[RCIM sharedRCIM] connectWithToken:@"YourTestUserToken"     success:^(NSString *userId) {

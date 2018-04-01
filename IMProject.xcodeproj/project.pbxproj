@@ -16,6 +16,8 @@
 		C9AB8053206A9170004937E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB8052206A9170004937E5 /* main.m */; };
 		C9AB805D206A9170004937E5 /* IMProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB805C206A9170004937E5 /* IMProjectTests.m */; };
 		C9AB8068206A9170004937E5 /* IMProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB8067206A9170004937E5 /* IMProjectUITests.m */; };
+		C9E47063206FD897005BE040 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E47061206FD897005BE040 /* MineViewController.m */; };
+		C9E47068206FD909005BE040 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E47067206FD909005BE040 /* HomeViewController.m */; };
 		C9EE66EE206E79010022E38A /* IMDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE66EB206E79010022E38A /* IMDataManager.m */; };
 		C9EE66F1206E7BB80022E38A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE66F0206E7BB80022E38A /* BaseViewController.m */; };
 		C9EE66F9206E7CA10022E38A /* IMChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE66F8206E7CA10022E38A /* IMChatListViewController.m */; };
@@ -91,6 +93,12 @@
 		C9AB8063206A9170004937E5 /* IMProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AB8067206A9170004937E5 /* IMProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMProjectUITests.m; sourceTree = "<group>"; };
 		C9AB8069206A9170004937E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E4705D206FD671005BE040 /* CommonDataDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataDefine.h; sourceTree = "<group>"; };
+		C9E47060206FD897005BE040 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		C9E47061206FD897005BE040 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		C9E47066206FD909005BE040 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C9E47067206FD909005BE040 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C9E4706B206FDBD6005BE040 /* NetWorkingDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkingDefine.h; sourceTree = "<group>"; };
 		C9EE66E9206E78ED0022E38A /* IMProjectPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProjectPrefixHeader.pch; sourceTree = "<group>"; };
 		C9EE66EA206E78EE0022E38A /* ColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDefine.h; sourceTree = "<group>"; };
 		C9EE66EB206E79010022E38A /* IMDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMDataManager.m; sourceTree = "<group>"; };
@@ -290,6 +298,86 @@
 			path = IMProjectUITests;
 			sourceTree = "<group>";
 		};
+		C9E47047206FD3E2005BE040 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C9E4706A206FD933005BE040 /* Models */,
+				C9E47069206FD933005BE040 /* Views */,
+				C9E4704C206FD53F005BE040 /* ViewControllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C9E47048206FD3F3005BE040 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C9E47062206FD897005BE040 /* Models */,
+				C9E4705F206FD897005BE040 /* ViewControllers */,
+				C9E4705E206FD897005BE040 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C9E4704C206FD53F005BE040 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E47066206FD909005BE040 /* HomeViewController.h */,
+				C9E47067206FD909005BE040 /* HomeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C9E4705E206FD897005BE040 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9E4705F206FD897005BE040 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E47060206FD897005BE040 /* MineViewController.h */,
+				C9E47061206FD897005BE040 /* MineViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C9E47062206FD897005BE040 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9E47064206FD8EA005BE040 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9E47065206FD8EA005BE040 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9E47069206FD933005BE040 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9E4706A206FD933005BE040 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C9EE66DC206C05390022E38A /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +389,8 @@
 				C9EE6751206E989D0022E38A /* BaseNavigationController.m */,
 				C9EE6756206EB7D10022E38A /* BaseTabBarController.h */,
 				C9EE6757206EB7D10022E38A /* BaseTabBarController.m */,
+				C9E4705D206FD671005BE040 /* CommonDataDefine.h */,
+				C9E4706B206FDBD6005BE040 /* NetWorkingDefine.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -331,6 +421,8 @@
 		C9EE66F2206E7BFD0022E38A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9E47048206FD3F3005BE040 /* Mine */,
+				C9E47047206FD3E2005BE040 /* Home */,
 				C9EE66F3206E7C180022E38A /* IM */,
 			);
 			path = Classes;
@@ -339,8 +431,8 @@
 		C9EE66F3206E7C180022E38A /* IM */ = {
 			isa = PBXGroup;
 			children = (
-				C9EE66F6206E7C5D0022E38A /* Views */,
-				C9EE66F5206E7C560022E38A /* Models */,
+				C9E47065206FD8EA005BE040 /* Models */,
+				C9E47064206FD8EA005BE040 /* Views */,
 				C9EE66F4206E7C2C0022E38A /* ViewControllers */,
 			);
 			path = IM;
@@ -355,20 +447,6 @@
 				C9EE66F8206E7CA10022E38A /* IMChatListViewController.m */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		C9EE66F5206E7C560022E38A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C9EE66F6206E7C5D0022E38A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		C9EE66FD206E86C20022E38A /* CommenTool */ = {
@@ -632,11 +710,13 @@
 				C9EE66F1206E7BB80022E38A /* BaseViewController.m in Sources */,
 				C9EE6714206E8B940022E38A /* MBProgressHUD+Add.m in Sources */,
 				C9EE6752206E989D0022E38A /* BaseNavigationController.m in Sources */,
+				C9E47068206FD909005BE040 /* HomeViewController.m in Sources */,
 				C9EE6700206E87160022E38A /* NetWorkingTool.m in Sources */,
 				C9EE6758206EB7D10022E38A /* BaseTabBarController.m in Sources */,
 				C9EE674F206E977B0022E38A /* ImagePickerManager.m in Sources */,
 				C9EE6715206E8B940022E38A /* MBProgressHUD+MJ.m in Sources */,
 				C9EE66EE206E79010022E38A /* IMDataManager.m in Sources */,
+				C9E47063206FD897005BE040 /* MineViewController.m in Sources */,
 				C9AB8053206A9170004937E5 /* main.m in Sources */,
 				C9AB8045206A9170004937E5 /* AppDelegate.m in Sources */,
 			);
